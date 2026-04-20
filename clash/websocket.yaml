@@ -1,0 +1,15 @@
+proxies:
+  - name: "Websocket"
+    type: vless
+    server: 0.0.0.0
+    port: 443
+    udp: true
+    uuid: uuid-uuid-uuid
+    tls: true
+    servername: example.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: example.org

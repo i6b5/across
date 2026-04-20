@@ -1,0 +1,15 @@
+proxies:
+  - name: "Reality"
+    type: vless
+    server: 0.0.0.0
+    port: 443
+    udp: true
+    uuid: uuid-uuid-uuid
+    flow: xtls-rprx-vision
+    tls: true
+    client-fingerprint: chrome
+    servername: www.microsoft.com
+    reality-opts:
+      public-key: public-key
+      short-id: short-id
+    network: tcp

@@ -1,0 +1,26 @@
+dns:
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: false
+  use-system-hosts: false
+  respect-rules: false
+  listen: 0.0.0.0:8053
+  ipv6: false
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-range6: fdfe:dcba:9876::1/64
+  default-nameserver:
+    - 2400:3200:baba::1
+  nameserver:
+    - 2400:3200:baba::1
+  fallback:
+    - 23.95.222.18:8053
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 127.0.0.0/8
+      - 240.0.0.0/4
