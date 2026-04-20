@@ -1,0 +1,12 @@
+payload:
+  # 品牌重塑后的主域名
+  - DOMAIN-SUFFIX,x.com
+
+  # 经典主域名
+  - DOMAIN-SUFFIX,twitter.com
+
+  # 官方短链接
+  - DOMAIN-SUFFIX,t.co
+
+  # 静态资源与图片服务器 (非常重要，否则无法看图)
+  - DOMAIN-SUFFIX,twimg.com
