@@ -1,0 +1,131 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "tls",
+        "server": "1.1.1.1"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "trojan",
+      "type": "trojan",
+      "listen": "::",
+      "listen_port": 8000,
+      "users": [
+        {
+          "password": "87879527"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "apps.apple.com",
+        "key_path": "/etc/sing-box/server.key",
+        "certificate_path": "/etc/sing-box/server.crt"
+      }
+    },
+    {
+      "tag": "trojan-with-cf",
+      "type": "trojan",
+      "listen": "::",
+      "listen_port": 8001,
+      "users": [
+        {
+          "password": "87879527"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "apps.apple.com",
+        "key_path": "/etc/sing-box/server.key",
+        "certificate_path": "/etc/sing-box/server.crt"
+      }
+    },
+    {
+      "tag": "hysteria2",
+      "type": "hysteria2",
+      "listen": "::",
+      "listen_port": 8080,
+      "users": [
+        {
+          "password": "87879527"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "apps.apple.com",
+        "key_path": "/etc/sing-box/server.key",
+        "certificate_path": "/etc/sing-box/server.crt"
+      }
+    },
+    {
+      "tag": "hysteria2-with-cf",
+      "type": "hysteria2",
+      "listen": "::",
+      "listen_port": 8081,
+      "users": [
+        {
+          "password": "87879527"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "apps.apple.com",
+        "key_path": "/etc/sing-box/server.key",
+        "certificate_path": "/etc/sing-box/server.crt"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "cloudflare",
+      "type": "vless",
+      "server": "",
+      "server_port": 8443,
+      "uuid": "0835f620-3c46-4f07-92b7-de6aceea2edc",
+      "tls": {
+        "enabled": true,
+        "server_name": ""
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": [
+          "trojan-with-cf",
+          "hysteria2-with-cf"
+        ],
+        "domain_suffix": [
+          "ggpht.com",
+          "google.com.hk",
+          "google.com",
+          "googleapis.com",
+          "googleusercontent.com",
+          "googlevideo.com",
+          "gstatic.com",
+          "youtu.be",
+          "youtube.com",
+          "ytimg.com",
+          "www.reddit.com"
+        ],
+        "outbound": "cloudflare"
+      }
+    ]
+  }
+}
