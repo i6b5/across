@@ -1,8 +1,11 @@
 proxies:
-  - name: "Hysteria2"
-    type: hysteria2
-    server: 0.0.0.0
-    ports: 0-65535
-    udp: true
-    password: password
-    sni: example.org
+  - {
+    name: "史诗狂怒",
+    type: hysteria2,
+    server: 1.1.1.1,
+    ports: 10000-29999,
+    udp: true,
+    password: 3m9KNFCOpr0nA16g9i,
+    sni: apps.apple.com,
+    skip-cert-verify: true,
+  }

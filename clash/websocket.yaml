@@ -1,15 +1,15 @@
 proxies:
-  - name: "Websocket"
-    type: vless
-    server: 0.0.0.0
-    port: 443
-    udp: true
-    uuid: uuid-uuid-uuid
-    tls: true
-    servername: example.org
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: example.org
+  - {
+    name: WebSocket,
+    server: 2606:4700:a8::2333,
+    port: 2083,
+    type: vless,
+    uuid: 0835f620-3c46-4f07-92b7-de6aceea2edc,
+    tls: true,
+    udp: true,
+    skip-cert-verify: false,
+    servername: cloudflare.com,
+    client-fingerprint: chrome,
+    network: ws,
+    ws-opts: { path: /, headers: { Host: cloudflare.com } },
+  }
