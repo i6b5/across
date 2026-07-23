@@ -35,7 +35,7 @@ dns:
   enable: true
   cache-algorithm: arc
   prefer-h3: false
-  use-hosts: true
+  use-hosts: false
   use-system-hosts: false
   respect-rules: false
   listen: 0.0.0.0:1053
