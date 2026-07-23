@@ -1,0 +1,33 @@
+rules:
+  - "GEOIP,LAN,DIRECT"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,PROXY"
+proxies:
+  - {
+      name: RN,
+      type: hysteria2,
+      server: 23.95.222.18,
+      port: 8888,
+      udp: true,
+      password: 3m9KNFCOpr0nA16g9i,
+      sni: apps.apple.com,
+      skip-cert-verify: true,
+    }
+  - {
+      name: CF,
+      server: 2606:4700:a8::8443,
+      port: 8443,
+      type: vless,
+      uuid: 88690906-f775-46d3-84a9-7af1c4f6ca10,
+      udp: true,
+      tls: true,
+      tfo: true,
+      skip-cert-verify: true,
+      servername: cn.nireus.cc,
+      network: ws,
+      ws-opts: { path: /, headers: { Host: cn.nireus.cc } },
+    }
+proxy-groups:
+  - name: PROXY
+    type: select
+    include-all-proxies: true
