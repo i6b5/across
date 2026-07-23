@@ -1,4 +1,6 @@
 rules:
+  - "DOMAIN-SUFFIX,apple.com,DIRECT"
+  - "DOMAIN-SUFFIX,icloud.com,DIRECT"
   - "GEOIP,LAN,DIRECT"
   - "GEOIP,CN,DIRECT"
   - "MATCH,PROXY"
@@ -42,13 +44,14 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   default-nameserver:
-    - tls://1.1.1.1
+    - 1.1.1.1
+    - 1.0.0.1
   nameserver:
-    - tls://1.1.1.1
+    - https://frd4wvnobp.cloudflare-gateway.com/dns-query
   fallback:
-    - tls://1.1.1.1
+    - https://frd4wvnobp.cloudflare-gateway.com/dns-query
   proxy-server-nameserver:
-    - tls://1.1.1.1
+    - https://frd4wvnobp.cloudflare-gateway.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
