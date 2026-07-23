@@ -31,3 +31,27 @@ proxy-groups:
   - name: PROXY
     type: select
     include-all-proxies: true
+dns:
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: false
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: redir-host
+  default-nameserver:
+    - tls://1.1.1.1
+  nameserver:
+    - tls://1.1.1.1
+  fallback:
+    - tls://1.1.1.1
+  proxy-server-nameserver:
+    - tls://1.1.1.1
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/32
+      - 127.0.0.1/32
