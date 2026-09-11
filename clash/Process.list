@@ -7,7 +7,7 @@ PROCESS-PATH-REGEX,doubao
 PROCESS-PATH-REGEX,netease
 PROCESS-PATH-REGEX,qbittorrent
 PROCESS-PATH-REGEX,utorrent
-PROCESS-PATH-REGEX,bitComet
+PROCESS-PATH-REGEX,bitcomet
 PROCESS-PATH-REGEX,aria2
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
