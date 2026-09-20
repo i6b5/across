@@ -1,18 +1,13 @@
-PROCESS-PATH-REGEX,qbittorrent
-PROCESS-PATH-REGEX,utorrent
-PROCESS-PATH-REGEX,bitcomet
-PROCESS-PATH-REGEX,aria2
 PROCESS-PATH-REGEX,thunder
-
 PROCESS-PATH-REGEX,wegame
-PROCESS-PATH-REGEX,weixin
-PROCESS-PATH-REGEX,wechat
-PROCESS-PATH-REGEX,tencent
 
 PROCESS-PATH-REGEX,system32
 
 DOMAIN-SUFFIX,hotmail.com
+
 DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windowsupdate.com
+
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoftonline.com
 
@@ -22,6 +17,8 @@ DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
 
 DOMAIN-SUFFIX,nvidia.com
+DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,steamcontent.com
 
 DOMAIN-SUFFIX,87879527.xyz
 DOMAIN-SUFFIX,nireus.cc
