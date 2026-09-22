@@ -1,1 +1,0 @@
-AND,((DST-PORT,443),(NETWORK,udp))
