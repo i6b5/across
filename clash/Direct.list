@@ -5,6 +5,7 @@ PROCESS-NAME,msedgewebview2.exe
 PROCESS-NAME,wegame.exe
 PROCESS-NAME,WeChatAppEx.exe
 PROCESS-NAME,SystemSettings.exe
+DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,cloudflare.com
