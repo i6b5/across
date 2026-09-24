@@ -7,5 +7,4 @@ PROCESS-NAME,WeChatAppEx.exe
 PROCESS-NAME,SystemSettings.exe
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,87879527.xyz
-DOMAIN-SUFFIX,nireus.cc
+DOMAIN-SUFFIX,cloudflare.com
