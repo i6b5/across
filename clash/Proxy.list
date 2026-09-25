@@ -1,6 +1,7 @@
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,chatgpt.com
+GEOSITE,category-porn
+GEOSITE,category-ai-!cn
+GEOSITE,github
+GEOSITE,facebook
+GEOSITE,instagram
+GEOSITE,youtube
+GEOSITE,twitter
